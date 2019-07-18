@@ -1,0 +1,105 @@
+<template>
+  <v-page title="确认下单">
+    <div class="page-content">
+      <van-panel>
+        <div slot="header" class="card-header">
+          <img src="@/assets/logo_x.png" class="logo" alt="">
+          嫣然亿美讲师团体讲师
+        </div>
+        <div class="order-content">
+          <div class="left">
+            <img src="@/assets/tu_tx.jpg" v-auto-height alt="">
+          </div>
+          <div class="right">
+            <div class="title">课程名称课程名称课程名称</div>
+            <div class="type">规格：长期有效</div>
+          </div>
+        </div>
+      </van-panel>
+      <div class="line"></div>
+      <van-cell-group>
+        <van-cell :border="false" title="课程金额" value="￥50.00"/>
+        <van-cell :border="false" title="数量" value="x 2"/>
+        <van-cell :border="false" title="应付金额">
+          <div class="classes-price">￥50.00</div>
+        </van-cell>
+      </van-cell-group>
+      <van-button size="large">立即支付</van-button>
+    </div>
+
+  </v-page>
+</template>
+
+<script>
+  export default {
+    name: 'confirm_order',
+    data () {
+      return {
+        checked: true
+      }
+    },
+  }
+</script>
+
+<style scoped>
+
+  .page-content {
+    background : #f5f5f5;
+  }
+
+  .page-content .card-header .logo {
+    position : relative;
+    top      : 5px;
+
+  }
+
+  .page-content .card-header {
+    height        : 50px;
+    line-height   : 50px;
+    border-bottom : 1px solid #f5f5f5;
+    padding       : 0 15px;
+
+  }
+
+  .page-content .classes-price {
+    color : #FB561B;
+  }
+
+  .page-content .line {
+    height : 8px;
+  }
+
+  .page-content .order-content {
+    display : flex;
+    padding : 15px;
+  }
+
+  .page-content .left {
+    flex : 1 0 25%;
+  }
+
+  .page-content .right {
+    flex         : 1 0 75%;
+    padding-left : 15px;
+    padding-top  : 15px;
+  }
+
+  .page-content .left img {
+    width         : 100%;
+    border-radius : 5px;
+  }
+
+  .page-content .type {
+    color      : #9d9d9d;
+    margin-top : 10px;
+  }
+
+  .van-button--large {
+    width         : 90%;
+    margin-left   : 5%;
+    border-radius : 5px;
+    color         : #fff;
+    background    : #0E4548;
+    margin-top    : 100px;
+  }
+</style>

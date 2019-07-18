@@ -1,0 +1,170 @@
+<template>
+  <v-page title="我的收货地址">
+
+    <div class="content">
+      <div class="address-wrap">
+        <div class="address-item">
+          <div class="address-title">
+            <div>用户名</div>
+            <div>13000000000</div>
+          </div>
+          <div class="address-info">
+            吉林省长春市高新技术开发区双德乡 高新区硅谷大街安联国际大厦B座10层1043室
+          </div>
+          <div class="address-action">
+            <div class="checkbox-wrap">
+              <van-radio>设为默认</van-radio>
+            </div>
+            <div class="action-wrap">
+              <span>
+                <van-icon name="edit" size="20px" class="action-icon"></van-icon>
+                编辑</span>
+              <span>
+                <van-icon name="delete" size="20px" class="action-icon">
+
+                </van-icon>
+                删除</span>
+            </div>
+          </div>
+        </div>
+        <div class="address-item">
+          <div class="address-title">
+            <div>用户名</div>
+            <div>13000000000</div>
+          </div>
+          <div class="address-info">
+            吉林省长春市高新技术开发区双德乡 高新区硅谷大街安联国际大厦B座10层1043室
+          </div>
+          <div class="address-action">
+            <div class="checkbox-wrap">
+              <van-radio>设为默认</van-radio>
+            </div>
+            <div class="action-wrap">
+              <span>
+                <van-icon name="edit" size="20px" class="action-icon"></van-icon>
+                编辑</span>
+              <span>
+                <van-icon name="delete" size="20px" class="action-icon">
+
+                </van-icon>
+                删除</span>
+            </div>
+          </div>
+        </div>
+        <div class="address-item">
+          <div class="address-title">
+            <div>用户名</div>
+            <div>13000000000</div>
+          </div>
+          <div class="address-info">
+            吉林省长春市高新技术开发区双德乡 高新区硅谷大街安联国际大厦B座10层1043室
+          </div>
+          <div class="address-action">
+            <div class="checkbox-wrap">
+              <van-radio>设为默认</van-radio>
+            </div>
+            <div class="action-wrap">
+              <span>
+                <van-icon name="edit" size="20px" class="action-icon"></van-icon>
+                编辑</span>
+              <span>
+                <van-icon name="delete" size="20px" class="action-icon">
+
+                </van-icon>
+                删除</span>
+            </div>
+          </div>
+        </div>
+        <div class="address-item">
+          <div class="address-title">
+            <div>用户名</div>
+            <div>13000000000</div>
+          </div>
+          <div class="address-info">
+            吉林省长春市高新技术开发区双德乡 高新区硅谷大街安联国际大厦B座10层1043室
+          </div>
+          <div class="address-action">
+            <div class="checkbox-wrap">
+              <van-radio>设为默认</van-radio>
+            </div>
+            <div class="action-wrap">
+              <span>
+                <van-icon name="edit" size="20px" class="action-icon"></van-icon>
+                编辑</span>
+              <span>
+                <van-icon name="delete" size="20px" class="action-icon">
+
+                </van-icon>
+                删除</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </v-page>
+</template>
+
+<script>
+  export default {
+    name: 'address_list'
+  }
+</script>
+
+<style scoped>
+  .content {
+    height     : 100%;
+    background : #f7f7f7;
+    padding-top: 10px;
+    box-sizing: border-box;
+  }
+
+  .content >>> .van-radio__icon--checked .van-icon{
+    border-color     : #FA6835;
+    background-color : #FA6835;
+  }
+  .address-wrap {
+
+  }
+  .address-wrap span{
+    margin-left: 8px;
+  }
+  .address-item {
+    padding    : 15px;
+    background : #fff;
+    margin-bottom: 10px;
+  }
+
+  .address-item .action-icon {
+    position: relative;
+    top : 4px;
+
+  }
+
+  .address-item .address-title {
+    display       : flex;
+    width         : 100%;
+    margin-bottom : 8px;
+  }
+
+  .address-item .address-title div:first-child {
+    flex : 1 0 40%;
+  }
+
+  .address-item .address-title div:last-child {
+    flex : 1 0 60%;
+  }
+
+  .address-item .address-info {
+    line-height    : 26px;
+    border-bottom  : 1px solid #efefef;
+    padding-bottom : 15px;
+  }
+
+  .address-action {
+    display         : flex;
+    padding-top     : 10px;
+    justify-content : space-between;
+  }
+</style>

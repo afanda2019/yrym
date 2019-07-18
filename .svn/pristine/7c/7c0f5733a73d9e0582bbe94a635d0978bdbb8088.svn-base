@@ -1,0 +1,93 @@
+<template>
+  <v-page title="名师风采">
+    <div class="content">
+      <div class="page-title">
+        <img class="title" src="@/assets/sy_25.jpg" alt="">
+      </div>
+      <div class="teacher-list">
+        <div class="teacher-item">
+          <div class="teacher-avatar">
+            <img src="@/assets/lstx.jpg" class="avatar" alt="">
+          </div>
+          <div class="teacher-info">
+            <div class="teacher-name">姓名</div>
+            <div class="teacher-desc">名师简介名师简介名师简介名师简介名名师简介名师简介名师简介名师简介名师简介名师简介名</div>
+          </div>
+        </div>
+        <div class="teacher-item">
+          <div class="teacher-avatar">
+            <img src="@/assets/lstx.jpg" class="avatar" alt="">
+          </div>
+          <div class="teacher-info">
+            <div class="teacher-name">姓名</div>
+            <div class="teacher-desc">名师简介名师简介名师简介名师简介名名师简介名师简介名师简介名师简介名师简介名师简介名</div>
+          </div>
+        </div>
+        <div class="teacher-item">
+          <div class="teacher-avatar">
+            <img src="@/assets/lstx.jpg" class="avatar" alt="">
+          </div>
+          <div class="teacher-info">
+            <div class="teacher-name">姓名</div>
+            <div class="teacher-desc">名师简介名师简介名师简介名师简介名名师简介名师简介名师简介名师简介名师简介名师简介名</div>
+          </div>
+        </div>
+        <div class="teacher-item">
+          <div class="teacher-avatar">
+            <img src="@/assets/lstx.jpg" class="avatar" alt="">
+          </div>
+          <div class="teacher-info">
+            <div class="teacher-name">姓名</div>
+            <div class="teacher-desc">名师简介名师简介名师简介名师简介名名师简介名师简介名师简介名师简介名师简介名师简介名</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </v-page>
+</template>
+
+<script>
+  export default {
+    name: 'famous_teacher'
+  }
+</script>
+
+<style scoped>
+  .content .page-title {
+    text-align    : center;
+    margin-bottom : 10px;
+  }
+
+  .content .page-title .title {
+    width : 100%;
+  }
+  .teacher-list{
+
+  }
+  .teacher-list .teacher-item{
+    display: flex;
+    padding: 10px 15px;
+    border-bottom: 1px solid #efefef;
+  }
+  .teacher-list .teacher-item .teacher-avatar{
+    flex: 1 0 30%;
+  }
+  .teacher-list .teacher-item .teacher-avatar .avatar{
+    width: 100%;
+  }
+  .teacher-list .teacher-item .teacher-info{
+    flex: 1 0 70%;
+    padding: 10px 5px 0 10px;
+    box-sizing: border-box;
+
+  }
+  .teacher-list .teacher-item .teacher-info .teacher-name{
+    color: #F28921;
+  }
+  .teacher-list .teacher-item .teacher-info .teacher-desc{
+    font-size: 14px;
+    color: #333;
+    margin-top: 5px;
+
+  }
+</style>

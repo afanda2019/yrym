@@ -1,0 +1,212 @@
+<template>
+  <v-page title="购物车" right-icon="delete" @right-click="deleteBuycar">
+    <div class="content">
+      <div class="buycar-list">
+        <div class="buycar-item">
+          <div class="checked-box">
+            <van-checkbox/>
+          </div>
+          <div class="goods-preview">
+            <img src="@/assets/tu_03.jpg" v-auto-height alt="">
+          </div>
+          <div class="goods-info">
+            <div class="title">
+              课程名称课程名称课程名称课程名称课程名称
+            </div>
+            <div class="price">
+              <b>￥1000.00</b>
+              <van-stepper class="stepper" v-model="value"/>
+            </div>
+          </div>
+        </div>
+        <div class="buycar-item">
+          <div class="checked-box">
+            <van-checkbox/>
+          </div>
+          <div class="goods-preview">
+            <img src="@/assets/tu_03.jpg" v-auto-height alt="">
+          </div>
+          <div class="goods-info">
+            <div class="title">
+              课程名称课程名称课程名称课程名称课程名称
+            </div>
+            <div class="price">
+              <b>￥1000.00</b>
+              <van-stepper class="stepper" v-model="value"/>
+            </div>
+          </div>
+        </div>
+        <div class="buycar-item">
+          <div class="checked-box">
+            <van-checkbox/>
+          </div>
+          <div class="goods-preview">
+            <img src="@/assets/tu_03.jpg" v-auto-height alt="">
+          </div>
+          <div class="goods-info">
+            <div class="title">
+              课程名称课程名称课程名称课程名称课程名称
+            </div>
+            <div class="price">
+              <b>￥1000.00</b>
+              <van-stepper class="stepper" v-model="value"/>
+            </div>
+          </div>
+        </div>
+        <div class="buycar-item">
+          <div class="checked-box">
+            <van-checkbox/>
+          </div>
+          <div class="goods-preview">
+            <img src="@/assets/tu_03.jpg" v-auto-height alt="">
+          </div>
+          <div class="goods-info">
+            <div class="title">
+              课程名称课程名称课程名称课程名称课程名称
+            </div>
+            <div class="price">
+              <b>￥1000.00</b>
+              <van-stepper class="stepper" v-model="value"/>
+            </div>
+          </div>
+        </div>
+        <div class="buycar-item">
+          <div class="checked-box">
+            <van-checkbox/>
+          </div>
+          <div class="goods-preview">
+            <img src="@/assets/tu_03.jpg" v-auto-height alt="">
+          </div>
+          <div class="goods-info">
+            <div class="title">
+              课程名称课程名称课程名称课程名称课程名称
+            </div>
+            <div class="price">
+              <b>￥1000.00</b>
+              <van-stepper class="stepper" v-model="value"/>
+            </div>
+          </div>
+        </div>
+
+        <div class="buycar-item">
+          <div class="checked-box">
+            <van-checkbox/>
+          </div>
+          <div class="goods-preview">
+            <img src="@/assets/tu_03.jpg" v-auto-height alt="">
+          </div>
+          <div class="goods-info">
+            <div class="title">
+              课程名称课程名称课程名称课程名称课程名称
+            </div>
+            <div class="price">
+              <b>￥1000.00</b>
+              <van-stepper class="stepper" v-model="value"/>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <van-submit-bar :price="3050" button-text="提交订单">
+        <van-checkbox v-model="checked">全选</van-checkbox>
+
+      </van-submit-bar>
+    </div>
+
+
+  </v-page>
+</template>
+
+<script>
+  export default {
+    name: 'buycar',
+    data () {
+      return {
+        value: 0
+      }
+    },
+    methods: {
+      deleteBuycar () {
+        alert('删除购物车')
+      }
+    }
+  }
+</script>
+
+<style scoped>
+  .van-submit-bar {
+    border-top : 1px solid #f7f7f7;
+  }
+
+  .van-submit-bar__bar {
+    padding-left : 15px;
+  }
+
+  .van-button--danger {
+    background   : linear-gradient(to right, #FEB463, #F48612);
+    border-width : 0;
+  }
+
+  .buycar-list {
+    margin-bottom : 20px;
+  }
+
+  .content {
+    padding-top : 10px;
+    height      : calc(100% - 50px);
+    overflow-y  : scroll;
+    background  : #f7f7f7;
+    box-sizing  : border-box;
+  }
+
+  .stepper {
+    position : relative;
+    top      : -3px;
+  }
+
+  .buycar-item {
+    background    : #fff;
+    display       : flex;
+    padding       : 10px 15px;
+    border-bottom : 1px solid #f7f7f7;
+  }
+
+  .buycar-item:last-child {
+    border-bottom : unset;
+  }
+
+  .buycar-item .checked-box {
+    flex        : 1 0 5%;
+    display     : flex;
+    align-items : center;
+  }
+
+  .buycar-item .goods-preview {
+    flex       : 1 0 30%;
+    box-sizing : border-box;
+    padding    : 5px;
+  }
+
+  .buycar-item .goods-preview img {
+    width : 100%;
+  }
+
+  .buycar-item .goods-info {
+    flex         : 1 0 65%;
+    padding-left : 10px;
+    box-sizing   : border-box;
+    padding-top  : 10px;
+  }
+
+  .buycar-item .goods-info .title {
+    font-size : 15px;
+    color     : #333;
+  }
+
+  .buycar-item .goods-info .price {
+    color           : #FD8561;
+    margin-top      : 13px;
+    display         : flex;
+    justify-content : space-between;
+  }
+</style>

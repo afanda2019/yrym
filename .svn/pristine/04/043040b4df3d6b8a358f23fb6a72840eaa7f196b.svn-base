@@ -1,0 +1,99 @@
+<template>
+  <v-page title="新闻中心">
+    <div class="content">
+      <div class="page-title">
+        <img class="title" src="@/assets/sy-xwzx.png" alt="">
+      </div>
+      <div class="news-banner">
+        <img src="@/assets/xw-banner.jpg" alt="">
+      </div>
+      <div class="news-list">
+        <div class="news-list-item">
+          <div class="news-preview">
+            <img src="@/assets/tu_01.jpg" alt="">
+          </div>
+          <div class="news-info">
+            <div class="title">新闻标题新闻标题新闻标题新闻标题新闻标题新闻标题新闻标题新闻标题新闻标题新闻标题新闻标题新闻标题</div>
+            <div class="date">2019-3-21</div>
+          </div>
+        </div>
+        <div class="news-list-item">
+          <div class="news-preview">
+            <img src="@/assets/tu_01.jpg" alt="">
+          </div>
+          <div class="news-info">
+            <div class="title">新闻标题新闻标题新闻标题新闻标题新闻标题新闻标题新闻标题新闻标题新闻标题新闻标题新闻标题新闻标题</div>
+            <div class="date">2019-3-21</div>
+          </div>
+        </div>
+        <div class="news-list-item">
+          <div class="news-preview">
+            <img src="@/assets/tu_01.jpg" alt="">
+          </div>
+          <div class="news-info">
+            <div class="title">新闻标题新闻标题新闻标题新闻标题新闻标题新闻标题新闻标题新闻标题新闻标题新闻标题新闻标题新闻标题</div>
+            <div class="date">2019-3-21</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </v-page>
+</template>
+
+<script>
+  export default {
+    name: 'news_center'
+  }
+</script>
+
+<style scoped>
+  .news-list-item{
+    display: flex;
+    padding: 12px;
+    margin: 10px 15px;
+    background: #F4F4F4;
+  }
+  .news-preview{
+    flex: 1 0 40%;
+  }
+  .news-preview img{
+    width: 100%;
+    height: 80px;
+  }
+  .news-info{
+    flex: 1 0 60%;
+    box-sizing: border-box;
+    padding-left: 10px;
+  }
+  .news-info .title{
+    font-size: 15px;
+    width: 100%;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    margin: 5px 0;
+    color: #333;
+  }
+  .news-info .date{
+    font-size: 14px;
+    color: #666;
+  }
+
+  .news-banner {
+    width : 100%;
+  }
+
+  .news-banner img {
+    width : 100%;
+  }
+
+  .content .page-title {
+    text-align : center;
+    margin     : 10px;
+  }
+
+  .content .page-title .title {
+    width : 80%;
+  }
+</style>

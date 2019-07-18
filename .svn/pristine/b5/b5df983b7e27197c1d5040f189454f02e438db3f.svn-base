@@ -1,0 +1,79 @@
+<template>
+  <v-page title="我的收藏">
+    <div class="classes-list">
+      <div class="classes-item">
+        <van-card
+          price="2000.00"
+          title="课程名称课程名称课程名称课程名称课程名称课程名称">
+          <div slot="thumb">
+            <img class="thumb-img" :src="previewImg" v-auto-height alt="">
+          </div>
+        </van-card>
+      </div>
+      <div class="classes-item">
+        <van-card
+          price="2000.00"
+          title="课程名称课程名称课程名称课程名称课程名称课程名称">
+          <div slot="thumb">
+            <img class="thumb-img" :src="previewImg" v-auto-height alt="">
+          </div>
+        </van-card>
+      </div>
+      <div class="classes-item">
+        <van-card
+          price="2000.00"
+          title="课程名称课程名称课程名称课程名称课程名称课程名称">
+          <div slot="thumb">
+            <img class="thumb-img" :src="previewImg" v-auto-height alt="">
+          </div>
+        </van-card>
+      </div>
+      <div class="classes-item">
+        <van-card
+          price="2000.00"
+          title="课程名称课程名称课程名称课程名称课程名称课程名称">
+          <div slot="thumb">
+            <img class="thumb-img" :src="previewImg" v-auto-height alt="">
+          </div>
+        </van-card>
+      </div>
+
+    </div>
+  </v-page>
+
+</template>
+
+<script>
+  export default {
+    name: 'mine_collection',
+    data () {
+      return {
+        previewImg: require('@/assets/tu_01.jpg')
+      }
+    }
+  }
+</script>
+
+<style scoped>
+  .thumb-img {
+    border-radius : 3px;
+  }
+
+  .van-card {
+    background    : #fff;
+    padding       : 15px;
+    border-bottom : 1px solid #f5f5f5;
+  }
+
+  .van-card__title {
+    padding-top : 5px;
+    font-size   : 15px;
+    color       : #333;
+    font-weight : unset;
+  }
+
+  .van-card__bottom {
+    margin-top : 20px;
+    font-size  : 16px;
+  }
+</style>

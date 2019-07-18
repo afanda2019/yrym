@@ -1,0 +1,15 @@
+<template>
+    <v-page title="关于我们">
+
+    </v-page>
+</template>
+
+<script>
+  export default {
+    name: 'about_us'
+  }
+</script>
+
+<style scoped>
+
+</style>

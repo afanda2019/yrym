@@ -1,0 +1,79 @@
+<template>
+  <v-page title="资质证书">
+    <div class="content">
+      <div class="page-title">
+        <img class="title" src="@/assets/zzzs.jpg" alt="">
+      </div>
+      <div class="list">
+        <van-row gutter="10">
+          <van-col span="12">
+            <div class="list-item">
+              <div class="image-wrap">
+                <img src="@/assets/zs.jpg">
+              </div>
+              <div class="title">证书名称</div>
+            </div>
+          </van-col>
+          <van-col span="12">
+            <div class="list-item">
+              <div class="image-wrap">
+                <img src="@/assets/zs.jpg">
+              </div>
+              <div class="title">证书名称</div>
+            </div>
+          </van-col>
+          <van-col span="12">
+            <div class="list-item">
+              <div class="image-wrap">
+                <img src="@/assets/zs.jpg">
+              </div>
+              <div class="title">证书名称</div>
+            </div>
+          </van-col>
+          <van-col span="12">
+            <div class="list-item">
+              <div class="image-wrap">
+                <img src="@/assets/zs.jpg">
+              </div>
+              <div class="title">证书名称</div>
+            </div>
+          </van-col>
+        </van-row>
+      </div>
+    </div>
+  </v-page>
+</template>
+
+<script>
+  export default {
+    name: 'qualification_certificate'
+  }
+</script>
+
+<style scoped>
+  .content {
+
+  }
+
+  .content .page-title {
+    text-align : center;
+    margin     : 10px;
+  }
+
+  .content .page-title .title {
+    width : 80%;
+  }
+  .list{
+    padding: 15px;
+  }
+
+  .list-item {
+    text-align : center;
+    color      : #666;
+    margin-bottom: 10px;
+  }
+
+  .list-item img {
+    width : 100%;
+  }
+</style>

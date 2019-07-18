@@ -1,0 +1,23 @@
+<template>
+    <v-page title="我的资料">
+      <div class="content">
+        <van-cell title="我的注册资料" is-link />
+        <van-cell title="我的收货地址" is-link />
+      </div>
+    </v-page>
+</template>
+
+<script>
+  export default {
+    name: 'mine_data'
+  }
+</script>
+
+<style scoped>
+  .content {
+    height     : 100%;
+    background : #f7f7f7;
+    padding-top: 10px;
+    box-sizing: border-box;
+  }
+</style>

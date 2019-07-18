@@ -1,0 +1,39 @@
+<template>
+    <v-page title="添加收货地址">
+      <div class="content">
+        <van-address-edit
+          show-postal
+          :area-list="areaList"
+          :show-postal="false"
+
+        />
+      </div>
+
+    </v-page>
+</template>
+
+<script>
+  import areaList from '@/utils/area'
+  export default {
+    name: 'add_address',
+    data(){
+      return {
+        areaList
+      };
+    }
+  }
+</script>
+
+<style scoped>
+  .content{
+    height: 100%;
+    background: #f7f7f7;
+    padding-top: 10px;
+    box-sizing: border-box;
+  }
+  .content >>> .van-address-edit__buttons .van-button{
+    background: linear-gradient(to right,#FDAD5A,#F58713);
+    border-radius: 5px;
+    border: unset;
+  }
+</style>

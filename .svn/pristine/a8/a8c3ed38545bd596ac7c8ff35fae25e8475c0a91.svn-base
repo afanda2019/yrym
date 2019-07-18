@@ -1,0 +1,30 @@
+import Vue from 'vue'
+import App from './App'
+import router from './router'
+// import Vue from 'vue'
+import Vant from 'vant'
+import 'vant/lib/index.css'
+import "@/urils/common"
+import { ajaxPost } from "@/urils/ajax"
+
+
+Vue.config.productionTip = false
+Vue.use(Vant);
+Vue.prototype.$ax = ajaxPost;
+Vue.prototype.$ev = new Vue()
+Vue.directive('auto-height', {
+  inserted: function (el) {
+    el.style.height = el.offsetWidth + 'px'
+  },
+  update: function (el) {
+    el.style.height = el.offsetWidth + 'px'
+  }
+})
+/* eslint-disable no-new */
+new Vue({
+  el: '#app',
+  router,
+  components: { App },
+  template: '<App/>'
+
+})

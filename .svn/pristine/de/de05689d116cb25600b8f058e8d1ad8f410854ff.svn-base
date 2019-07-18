@@ -1,0 +1,197 @@
+<template>
+  <v-page title="课程详情">
+    <div class="content">
+      <div class="audio-wrap">
+        <audio src="/i/horse.ogg" controls="controls">
+          Your browser does not support the audio element.
+        </audio>
+      </div>
+      <div class="course-info">
+        <div class="title">
+          课程名称课程名称课程名称课程名称课程名称课程名称课程名称课程名称课程名称课程名称
+        </div>
+        <div class="price">
+          <span>
+            <small>￥</small>
+            <b>10000.00</b>
+          </span>
+          <span>购买人数:1212</span>
+        </div>
+      </div>
+      <van-tabs sticky offset-top="40" color="#F59C3F" title-active-color="#F59C3F">
+        <van-tab title="详情">
+          <img src="@/assets/nr_tu.jpg" width="100%" alt="">
+        </van-tab>
+        <van-tab title="目录">
+          目录
+        </van-tab>
+        <van-tab title="讲师介绍">
+          讲师介绍
+        </van-tab>
+      </van-tabs>
+      <!-- 线上 -->
+      <!-- <van-goods-action>
+         <van-goods-action-mini-btn
+           icon="chat-o"
+           text="咨询"
+         />
+         <van-goods-action-mini-btn
+           icon="star-o"
+           text="收藏"
+         />
+         <van-goods-action-mini-btn
+           icon="cart-o"
+           text="购物车"
+         />
+
+         <van-goods-action-big-btn
+           primary
+            style=" background: linear-gradient(to right,#4FFD74,#20953F);"
+           text="立即预约"
+         />
+       </van-goods-action>-->
+      <!-- 线下 -->
+      <van-goods-action>
+        <van-goods-action-mini-btn
+          icon="chat-o"
+          text="咨询"
+        />
+        <van-goods-action-mini-btn
+          icon="star-o"
+          text="收藏"
+        />
+        <van-goods-action-big-btn
+          primary
+          text="开始学习"
+          @click="show = true"
+          style=" background: linear-gradient(to right,#F59C3F,#F38611);"
+        />
+      </van-goods-action>
+    </div>
+    <van-dialog
+      v-model="show"
+      :showConfirmButton="false"
+    >
+      <div class="explain-wrap">
+        <div class="explain-content-wrap">
+          <h4 class="title">上课说明</h4>
+          <div class="explain-content">
+            上课说明上课说明上课说明上课说明上课说明上课说明上课说明上课说明上课说明上课说明上课说明上课说明上课说明上课说明上课说明上课说明上课说明上课说明上课说明上课说明上课说明上课说明上课说明上课说明上课说明上课说明上课说明上课说明上课说明上课说明上课说明上课说明上课说明上课说明上课说明上课说明上课说明上课说明上课说明上课说明上课说明上课说明上课说明上课说明上课说明上课说明上课说明上课说明上课说明上课说明上课说明上课说明上课说明上课说明上课说明上课说明
+          </div>
+          <div class="date">
+            <div>嫣然美容</div>
+            <div>2019年3月21日</div>
+          </div>
+        </div>
+        <div class="checkbox-wrap">
+          <van-checkbox v-model="agree">我已同意并阅读</van-checkbox>
+
+        </div>
+        <van-button size="large" @click="show = false">确认</van-button>
+
+      </div>
+    </van-dialog>
+  </v-page>
+</template>
+
+<script>
+  export default {
+    name: 'course_detail',
+    data () {
+      return {
+        show: false,
+        agree:true
+      }
+    }
+  }
+</script>
+
+<style scoped>
+  .checkbox-wrap{
+    padding: 15px 0;
+  }
+  .explain-wrap >>> .van-checkbox__icon--checked .van-icon {
+    border-color     : #FA6835;
+    background-color : #FA6835;
+  }
+  .van-button--large {
+    border-radius : 5px;
+    color         : #fff;
+    background    : #0E4548;
+  }
+
+  .van-dialog {
+    width : 90%;
+  }
+
+  .explain-wrap {
+    padding : 15px;
+    margin  : 10px;
+  }
+
+  .explain-wrap .title {
+    margin  : 0;
+    padding : 5px 0;
+  }
+
+  .explain-content-wrap {
+    background  : #E7F8F2;
+    padding     : 15px;
+    font-size   : 15px;
+    line-height : 24px;
+    color       : #333;
+  }
+
+  .explain-content {
+    text-indent : 20px;
+  }
+
+  .explain-content-wrap .date {
+    text-align : right;
+    color      : #000;
+  }
+
+  .content >>> .van-button--danger {
+    background   : linear-gradient(to right, #4FFD74, #20953F);
+    border-width : 0;
+  }
+
+  .course-info {
+    background    : #fff;
+    padding       : 15px;
+    margin-bottom : 10px;
+  }
+
+  .course-info .title {
+    font-size : 15px;
+    color     : #333;
+  }
+
+  .price {
+    display         : flex;
+    margin          : 8px 0 0 0;
+    justify-content : space-between;
+  }
+
+  .price span:first-child {
+    color : #F59C3F;
+  }
+
+  .price span:last-child {
+    font-size : 14px;
+    color     : #999;
+  }
+
+  .content {
+    height     : 100%;
+    background : #f7f7f7;
+  }
+
+  .audio-wrap {
+    text-align    : center;
+    margin-bottom : 10px;
+    height        : 120px;
+    line-height   : 180px;
+    box-shadow    : #999 0 0 18px;
+  }
+</style>

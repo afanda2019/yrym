@@ -1,0 +1,46 @@
+import Vue from 'vue'
+import App from './App'
+import router from './router'
+import Vant from 'vant'
+
+import 'vant/lib/index.css'
+
+import * as utils from '@/utils'
+
+import vPage from '@/components/Header'
+import {SUCCESS_CODE} from './utils/config'
+
+Vue.use(Vant)
+
+Vue.config.productionTip = false
+
+// 没提示
+// Object.keys(utils).forEach(key => Vue.prototype['$' + key] = utils[key])
+
+Vue.prototype.$ajax = utils.ajax;
+Vue.prototype.$setStorage = utils.setStorage;
+Vue.prototype.$getStorage = utils.getStorage;
+Vue.prototype.$keepTwoDecimalFull = utils.keepTwoDecimalFull;
+Vue.prototype.$isWxBrowser = utils.isWxBrowser;
+Vue.prototype.$token = () => utils.getStorage('token');
+Vue.prototype.$token = () => utils.getStorage('token');
+Vue.prototype.SUCCESS_CODE = SUCCESS_CODE;
+
+Vue.prototype.$closeLoading = () => Toast.clear();
+Vue.prototype.$ev = new Vue();
+
+Vue.prototype.$ev = new Vue()
+Vue.directive('auto-height', {
+  inserted: el => el.style.height = el.offsetWidth + 'px',
+  update: el => el.style.height = el.offsetWidth + 'px'
+})
+
+Vue.component('v-page', vPage)
+
+/* eslint-disable no-new */
+new Vue({
+  el: '#app',
+  router,
+  components: {App},
+  template: '<App/>'
+})

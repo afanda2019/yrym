@@ -1,0 +1,392 @@
+<template>
+  <v-page title="产品分类">
+    <div class="page-warp">
+      <div class="badge-wrap">
+        <div class="badge-left">
+          <van-badge-group >
+            <van-badge title="全部课程"/>
+            <van-badge title="眉"/>
+            <van-badge title="眼"/>
+            <van-badge title="唇"/>
+            <van-badge title="营销"/>
+          </van-badge-group>
+        </div>
+        <div class="badge-content">
+          <div class="classes-list">
+            <div class="classes-list-item">
+              <van-row>
+                <van-col span="8">
+                  <div class="classes-preview">
+                    <img class="preview" src="@/assets/tu_04.jpg" alt="">
+                    <img class="hot" src="@/assets/hot.png" alt="">
+
+                  </div>
+                </van-col>
+                <van-col span="16">
+                  <div class="classes-info">
+                    <h3 class="classes-title van-ellipsis">标题标题标题标题标题标题</h3>
+                    <p class="classes-desc van-ellipsis">
+                      学习人员学习人员学习
+
+                      <van-icon name="arrow" size="14px" class="arrow-icon"/>
+                    </p>
+                    <div class="classes-price">
+                      <small>￥</small>
+                      <b>25.00</b>
+                      <van-icon name="cart-o" size="24px" class="icon-cart"/>
+                    </div>
+                  </div>
+
+                </van-col>
+              </van-row>
+            </div>
+            <div class="classes-list-item">
+              <van-row>
+                <van-col span="8">
+                  <div class="classes-preview">
+                    <img class="preview" src="@/assets/tu_04.jpg" alt="">
+                    <img class="hot" src="@/assets/hot.png" alt="">
+
+                  </div>
+                </van-col>
+                <van-col span="16">
+                  <div class="classes-info">
+                    <h3 class="classes-title van-ellipsis">标题标题标题标题标题标题</h3>
+                    <p class="classes-desc van-ellipsis">
+                      学习人员学习人员学习
+
+                      <van-icon name="arrow" size="14px" class="arrow-icon"/>
+                    </p>
+                    <div class="classes-price">
+                      <small>￥</small>
+                      <b>25.00</b>
+                      <van-icon name="cart-o" size="24px" class="icon-cart"/>
+                    </div>
+                  </div>
+
+                </van-col>
+              </van-row>
+            </div>
+            <div class="classes-list-item">
+              <van-row>
+                <van-col span="8">
+                  <div class="classes-preview">
+                    <img class="preview" src="@/assets/tu_04.jpg" alt="">
+                    <img class="hot" src="@/assets/hot.png" alt="">
+
+                  </div>
+                </van-col>
+                <van-col span="16">
+                  <div class="classes-info">
+                    <h3 class="classes-title van-ellipsis">标题标题标题标题标题标题</h3>
+                    <p class="classes-desc van-ellipsis">
+                      学习人员学习人员学习
+
+                      <van-icon name="arrow" size="14px" class="arrow-icon"/>
+                    </p>
+                    <div class="classes-price">
+                      <small>￥</small>
+                      <b>25.00</b>
+                      <van-icon name="cart-o" size="24px" class="icon-cart"/>
+                    </div>
+                  </div>
+
+                </van-col>
+              </van-row>
+            </div>
+            <div class="classes-list-item">
+              <van-row>
+                <van-col span="8">
+                  <div class="classes-preview">
+                    <img class="preview" src="@/assets/tu_04.jpg" alt="">
+                    <img class="hot" src="@/assets/hot.png" alt="">
+
+                  </div>
+                </van-col>
+                <van-col span="16">
+                  <div class="classes-info">
+                    <h3 class="classes-title van-ellipsis">标题标题标题标题标题标题</h3>
+                    <p class="classes-desc van-ellipsis">
+                      学习人员学习人员学习
+
+                      <van-icon name="arrow" size="14px" class="arrow-icon"/>
+                    </p>
+                    <div class="classes-price">
+                      <small>￥</small>
+                      <b>25.00</b>
+                      <van-icon name="cart-o" size="24px" class="icon-cart"/>
+                    </div>
+                  </div>
+
+                </van-col>
+              </van-row>
+            </div>
+            <div class="classes-list-item">
+              <van-row>
+                <van-col span="8">
+                  <div class="classes-preview">
+                    <img class="preview" src="@/assets/tu_04.jpg" alt="">
+                    <img class="hot" src="@/assets/hot.png" alt="">
+
+                  </div>
+                </van-col>
+                <van-col span="16">
+                  <div class="classes-info">
+                    <h3 class="classes-title van-ellipsis">标题标题标题标题标题标题</h3>
+                    <p class="classes-desc van-ellipsis">
+                      学习人员学习人员学习
+
+                      <van-icon name="arrow" size="14px" class="arrow-icon"/>
+                    </p>
+                    <div class="classes-price">
+                      <small>￥</small>
+                      <b>25.00</b>
+                      <van-icon name="cart-o" size="24px" class="icon-cart"/>
+                    </div>
+                  </div>
+
+                </van-col>
+              </van-row>
+            </div>
+            <div class="classes-list-item">
+              <van-row>
+                <van-col span="8">
+                  <div class="classes-preview">
+                    <img class="preview" src="@/assets/tu_04.jpg" alt="">
+                    <img class="hot" src="@/assets/hot.png" alt="">
+
+                  </div>
+                </van-col>
+                <van-col span="16">
+                  <div class="classes-info">
+                    <h3 class="classes-title van-ellipsis">标题标题标题标题标题标题</h3>
+                    <p class="classes-desc van-ellipsis">
+                      学习人员学习人员学习
+
+                      <van-icon name="arrow" size="14px" class="arrow-icon"/>
+                    </p>
+                    <div class="classes-price">
+                      <small>￥</small>
+                      <b>25.00</b>
+                      <van-icon name="cart-o" size="24px" class="icon-cart"/>
+                    </div>
+                  </div>
+
+                </van-col>
+              </van-row>
+            </div>
+            <div class="classes-list-item">
+              <van-row>
+                <van-col span="8">
+                  <div class="classes-preview">
+                    <img class="preview" src="@/assets/tu_04.jpg" alt="">
+                    <img class="hot" src="@/assets/hot.png" alt="">
+
+                  </div>
+                </van-col>
+                <van-col span="16">
+                  <div class="classes-info">
+                    <h3 class="classes-title van-ellipsis">标题标题标题标题标题标题</h3>
+                    <p class="classes-desc van-ellipsis">
+                      学习人员学习人员学习
+
+                      <van-icon name="arrow" size="14px" class="arrow-icon"/>
+                    </p>
+                    <div class="classes-price">
+                      <small>￥</small>
+                      <b>25.00</b>
+                      <van-icon name="cart-o" size="24px" class="icon-cart"/>
+                    </div>
+                  </div>
+
+                </van-col>
+              </van-row>
+            </div>
+            <div class="classes-list-item">
+              <van-row>
+                <van-col span="8">
+                  <div class="classes-preview">
+                    <img class="preview" src="@/assets/tu_04.jpg" alt="">
+                    <img class="hot" src="@/assets/hot.png" alt="">
+
+                  </div>
+                </van-col>
+                <van-col span="16">
+                  <div class="classes-info">
+                    <h3 class="classes-title van-ellipsis">标题标题标题标题标题标题</h3>
+                    <p class="classes-desc van-ellipsis">
+                      学习人员学习人员学习
+
+                      <van-icon name="arrow" size="14px" class="arrow-icon"/>
+                    </p>
+                    <div class="classes-price">
+                      <small>￥</small>
+                      <b>25.00</b>
+                      <van-icon name="cart-o" size="24px" class="icon-cart"/>
+                    </div>
+                  </div>
+
+                </van-col>
+              </van-row>
+            </div>
+            <div class="classes-list-item">
+              <van-row>
+                <van-col span="8">
+                  <div class="classes-preview">
+                    <img class="preview" src="@/assets/tu_04.jpg" alt="">
+                    <img class="hot" src="@/assets/hot.png" alt="">
+
+                  </div>
+                </van-col>
+                <van-col span="16">
+                  <div class="classes-info">
+                    <h3 class="classes-title van-ellipsis">标题标题标题标题标题标题</h3>
+                    <p class="classes-desc van-ellipsis">
+                      学习人员学习人员学习
+
+                      <van-icon name="arrow" size="14px" class="arrow-icon"/>
+                    </p>
+                    <div class="classes-price">
+                      <small>￥</small>
+                      <b>25.00</b>
+                      <van-icon name="cart-o" size="24px" class="icon-cart"/>
+                    </div>
+                  </div>
+
+                </van-col>
+              </van-row>
+            </div>
+            <div class="classes-list-item">
+              <van-row>
+                <van-col span="8">
+                  <div class="classes-preview">
+                    <img class="preview" src="@/assets/tu_04.jpg" alt="">
+                    <img class="hot" src="@/assets/hot.png" alt="">
+
+                  </div>
+                </van-col>
+                <van-col span="16">
+                  <div class="classes-info">
+                    <h3 class="classes-title van-ellipsis">标题标题标题标题标题标题</h3>
+                    <p class="classes-desc van-ellipsis">
+                      学习人员学习人员学习
+
+                      <van-icon name="arrow" size="14px" class="arrow-icon"/>
+                    </p>
+                    <div class="classes-price">
+                      <small>￥</small>
+                      <b>25.00</b>
+                      <van-icon name="cart-o" size="24px" class="icon-cart"/>
+                    </div>
+                  </div>
+
+                </van-col>
+              </van-row>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </v-page>
+</template>
+
+<script>
+  export default {
+    name: 'products_category',
+    created () {
+    }
+
+  }
+</script>
+
+<style scoped>
+.page-warp{
+  height: 100%;
+  background : #F5F5F5;
+
+}
+  .badge-wrap {
+    display : flex;
+  }
+
+  .badge-wrap .badge-left {
+    flex : 1 0 25%;
+    height: calc(100vh - 50px);
+    background: #fff;
+  }
+
+  .badge-wrap .badge-content {
+    flex       : 1 0 75%;
+    height: calc(100vh - 50px);
+    overflow-y: scroll;
+  }
+
+  .badge-wrap .badge-left .van-badge {
+    color      : #333;
+    text-align : center;
+  }
+
+  .badge-wrap .badge-left .van-badge--select {
+    border-color : #F59C3F;
+  }
+
+  .badge-wrap .badge-content .classes-list-item {
+    background : #fff;
+    margin     : 10px;
+    padding    : 10px;
+  }
+
+  .badge-wrap .badge-content .classes-list-item .classes-preview .preview {
+    width         : 80px;
+    height        : 80px;
+    border-radius : 5px;
+  }
+
+  .badge-wrap .badge-content .classes-list-item .classes-title {
+    padding   : 0;
+    margin    : 0;
+    font-size : 15px;
+    width     : 95%;
+  }
+
+  .badge-wrap .badge-content .classes-list-item .classes-info {
+    padding-left : 5px;
+  }
+
+  .badge-wrap .badge-content .classes-list-item .classes-desc {
+    font-size     : 13px;
+    color         : #666;
+    background    : #F5F5F5;
+    border-radius : 3px;
+    padding       : 4px;
+    line-height   : 20px;
+    margin        : 5px 0;
+    width         : 98%;
+  }
+
+  .badge-wrap .badge-content .classes-list-item .classes-desc .arrow-icon {
+    position : relative;
+    top      : 2px;
+  }
+
+  .badge-wrap .badge-content .classes-list-item .classes-info .classes-price {
+    color : red;
+  }
+
+  .badge-wrap .badge-content .classes-list-item .classes-info .icon-cart {
+    float : right;
+    color : #F59C3F;
+  }
+
+  .badge-wrap .badge-content .classes-list-item .classes-preview {
+    position : relative;
+  }
+
+  .badge-wrap .badge-content .classes-list-item .classes-preview .hot {
+    position : absolute;
+    left     : 0;
+    width    : 60%;
+    top      : 0;
+  }
+
+</style>
