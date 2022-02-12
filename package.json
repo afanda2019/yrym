@@ -15,7 +15,7 @@
   },
   "dependencies": {
     "ajax": "0.0.4",
-    "ajv": "^5.0.0",
+    "ajv": "^6.12.3",
     "axios": "^0.18.0",
     "common": "^0.2.5",
     "fastclick": "^1.0.6",
